@@ -19,5 +19,6 @@ This codelab contains the following projects:
 
 ## Related links
 
+* https://codelabs.developers.google.com/codelabs/arcore-depth/#0
 * https://developers.google.com/ar/develop/java/depth/overview
 * https://developers.googleblog.com/2020/06/a-new-wave-of-ar-realism-with-arcore-depth-api.html

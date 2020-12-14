@@ -17,7 +17,6 @@ precision mediump float;
 uniform sampler2D u_Depth;
 varying vec2 v_TexCoord;
 const highp float kMaxDepth = 8000.0; // In millimeters.
-const float kDepthOffsets = 8192.0; // 1 << 13
 
 uniform float u_DepthRangeToRenderMm;
 const float kDepthWidthToRenderMm = 350.0;
@@ -42,7 +41,8 @@ vec3 GetPolynomialColor(in float x,
   );
 }
 
-// Returns a smooth Percept colormap based upon the Turbo colormap.
+// Returns a smooth Percept colormap based upon the Turbo colormap:
+// https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
 vec3 PerceptColormap(in float x) {
   const vec4 kRedVec4 = vec4(0.55305649, 3.00913185, -5.46192616, -11.11819092);
   const vec4 kGreenVec4 = vec4(0.16207513, 0.17712472, 15.24091500, -36.50657960);
