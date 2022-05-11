@@ -61,7 +61,7 @@ public final class DepthTextureHandler {
    */
   public void update(final Frame frame) {
     try {
-      Image depthImage = frame.acquireDepthImage();
+      Image depthImage = frame.acquireDepthImage16Bits();
       depthTextureWidth = depthImage.getWidth();
       depthTextureHeight = depthImage.getHeight();
       glBindTexture(GL_TEXTURE_2D, depthTextureId);

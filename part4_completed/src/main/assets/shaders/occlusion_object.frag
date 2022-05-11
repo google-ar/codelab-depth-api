@@ -66,7 +66,7 @@ float GetVisibility(in vec2 depth_uv, in float asset_depth_mm) {
 
   // Same for very high depth values.
   float visibility_depth_far = InverseLerp(
-      depth_mm, /*min_depth_mm=*/7500.0, /*max_depth_mm=*/8000.0);
+      depth_mm, /*min_depth_mm=*/17500.0, /*max_depth_mm=*/20000.0);
 
   float visibility =
     max(max(visibility_occlusion, u_OcclusionAlpha),

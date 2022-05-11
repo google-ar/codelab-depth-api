@@ -16,7 +16,7 @@
 precision mediump float;
 uniform sampler2D u_Depth;
 varying vec2 v_TexCoord;
-const highp float kMaxDepth = 8000.0; // In millimeters.
+const highp float kMaxDepth = 20000.0; // In millimeters.
 
 uniform float u_DepthRangeToRenderMm;
 const float kDepthWidthToRenderMm = 350.0;

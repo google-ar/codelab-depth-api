@@ -39,7 +39,6 @@ public class BackgroundRenderer {
   private static final String DEPTH_VERTEX_SHADER_NAME = "shaders/background_show_depth_map.vert";
   private static final String DEPTH_FRAGMENT_SHADER_NAME = "shaders/background_show_depth_map.frag";
 
-
   private static final int COORDS_PER_VERTEX = 2;
   private static final int TEXCOORDS_PER_VERTEX = 2;
   private static final int FLOAT_SIZE = 4;
@@ -59,7 +58,7 @@ public class BackgroundRenderer {
   private int depthQuadPositionParam;
   private int depthQuadTexCoordParam;
 
-  private static final float MAX_DEPTH_RANGE_TO_RENDER_MM = 10000.0f;
+  private static final float MAX_DEPTH_RANGE_TO_RENDER_MM = 20000.0f;
   private float depthRangeToRenderMm = 0.0f;
   private int depthRangeToRenderMmParam;
 

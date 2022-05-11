@@ -59,7 +59,7 @@ public class BackgroundRenderer {
   private int depthQuadPositionParam;
   private int depthQuadTexCoordParam;
 
-  private static final float MAX_DEPTH_RANGE_TO_RENDER_MM = 10000.0f;
+  private static final float MAX_DEPTH_RANGE_TO_RENDER_MM = 20000.0f;
   private float depthRangeToRenderMm = 0.0f;
   private int depthRangeToRenderMmParam;
 
